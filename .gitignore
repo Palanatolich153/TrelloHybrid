@@ -27,3 +27,4 @@ target/
 .idea/
 /TrelloAPI.iml
 /automation.out
+/api-test.iml

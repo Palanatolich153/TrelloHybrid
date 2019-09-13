@@ -6,7 +6,11 @@
 
     <groupId>TrelloHybridFramework</groupId>
     <artifactId>TrelloHybrid</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>api-test</module>
+    </modules>
 
 
 </project>
