@@ -12,6 +12,7 @@ public interface ProjectConfig extends Config {
     String idBoard();
     String createListEndpoint();
     String createCardEndpoint();
+    String archiveListsEndpoint();
 
     boolean logging();
     boolean closed();
