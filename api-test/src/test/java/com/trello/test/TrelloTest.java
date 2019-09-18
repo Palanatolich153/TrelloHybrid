@@ -49,12 +49,12 @@ public class TrelloTest extends BaseClass {
         Faker faker = new Faker();
         SoftAssert assertion = new SoftAssert();
         BodyBuilder bodyBuilder = new BodyBuilder();
+        CardApiService cardApiService = new CardApiService();
 
         String listName = faker.name().username();
         String cardName = faker.name().username();
 
         ListPayload list = bodyBuilder.createList(listName);
-        CardApiService cardApiService = new CardApiService();
 
         CardPayload card = bodyBuilder.createCard();
         // expect

@@ -29,4 +29,8 @@ public class AssertableResponse {
     public Headers headers() {
         return response.getHeaders();
     }
+
+    public Response getResponse() {
+        return response;
+    }
 }

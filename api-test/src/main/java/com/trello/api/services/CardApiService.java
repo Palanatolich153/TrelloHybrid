@@ -15,4 +15,12 @@ public class CardApiService extends ApiService {
         return new AssertableResponse(setUp().given()
                 .body(card).post(config.createCardEndpoint() + cardName + "&idList=" + response.getId()));
     }
+
+    public AssertableResponse getLists() {
+
+        return new AssertableResponse(setUp().given()
+                //.body(allLists)
+                .pathParam("key", config.key()).pathParam("token", config.token())
+                .get("/1/boards/" + config.idBoard() + "/lists?cards=none&card_fields=all&filter=open&fields=all&key={key}&token={token}"));
+    }
 }
